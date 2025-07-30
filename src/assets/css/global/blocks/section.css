@@ -1,0 +1,20 @@
+.section > .divider:first-child {
+  transform: rotate(180deg) translateY(-1px);
+}
+
+.section__inner {
+  background-color: var(--spot-color, var(--color-bg-accent));
+  color: var(--color-text);
+}
+
+.section blockquote {
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  font-size: var(--size-step-);
+  letter-spacing: normal;
+   font-style: italic;
+}
+
+.section :is(h1, h2, h3, blockquote) {
+  opacity: 95%;
+}

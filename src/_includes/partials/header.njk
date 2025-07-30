@@ -1,0 +1,15 @@
+<header class="wrapper">
+  <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
+
+  <div class="repel ontop gutter-s">
+    {% if page.url == "/" %}
+      <a href="/" class="logo | cluster" aria-current="page">
+    {% else %}
+      <a href="/" class="logo | cluster">
+    {% endif %}
+        {% svg "misc/logo" %}
+        <span class="font-display">{{ meta.siteName }}</span>
+      </a>
+    {% include "partials/main-nav.njk" %}
+  </div>
+</header>
