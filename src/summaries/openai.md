@@ -1,7 +1,7 @@
 ---
 title: OpenAI Updates
 source: openai
-last_updated: last_updated: 2025-07-30T10:00:00.000Z
+last_updated: last_updated: 2025-07-30T12:00:00Z
 layout: post.njk
 tags: [openai]
 summary: |
