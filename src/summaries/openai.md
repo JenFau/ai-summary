@@ -1,28 +1,12 @@
 ---
 title: OpenAI Updates
 source: openai
-date: 2025-08-01
+date: 2025-07-30
 layout: post.njk
 tags: [openai]
 summary: |
   AI tool updates from the OpenAI blog RSS feed.
 ---
-# OpenAI Updates
-
-##  08 August 2025
-### New model availability
-
-- GPT-4 Turbo is now default for the `/v1/chat/completions` endpoint.
-- GPT-3.5 Turbo-16k is deprecated.
-
-### Pricing changes
-
-- Updated pricing on embeddings and image models.
-
-### Other notes
-
-- Improved system message handling for long conversations.
-
 ## 30 July 2025
 
 ### [ChatGPT agent System Card](https://openai.com/index/chatgpt-agent-system-card) (17/07/2025)
