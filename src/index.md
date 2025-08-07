@@ -9,7 +9,7 @@ This site provides human-readable summaries of changes across key AI tools and s
 
 ## Sources
 
-- [OpenAIdd](./summaries/openai.md)
+- [OpenAI](./summaries/openai.md)
 - [GitHub Copilot](./summaries/github-copilot.md)
 - [Rovo](./summaries/rovo.md)
 - [All sources](./whats-changed.md)
