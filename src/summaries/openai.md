@@ -1,12 +1,29 @@
 ---
 title: OpenAI Updates
 source: openai
-last_updated: 2025-08-11T14:40:59.506Z
+last_updated: 2025-07-30T12:00:00Z
 layout: post.njk
 tags: [openai]
 summary: |
   AI tool updates from the OpenAI blog RSS feed.
 ---
+## 30 July 2025
+
+### [ChatGPT agent System Card](https://openai.com/index/chatgpt-agent-system-card) (17/07/2025)
+
+ChatGPT agent System Card: OpenAI’s agentic model unites research, browser automation, and code tools with safeguards under the Preparedness Framework.
+
+### [Introducing ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent) (17/07/2025)
+
+Introducing ChatGPT agent: it thinks and acts, using tools to complete tasks like research, bookings, and slideshows—all with your guidance.
+
+### [No-code personal agents, powered by GPT-4.1 and Realtime API](https://openai.com/index/genspark) (01/07/2025)
+
+Learn how Genspark built a $36M ARR AI product in 45 days—with no-code agents powered by GPT-4.1 and OpenAI Realtime API.
+
+### [Customizable, no-code voice agent automation with GPT-4o](https://openai.com/index/retell-ai) (26/06/2025)
+
+Retell AI is transforming the call center with AI voice automation powered by GPT-4o and GPT-4.1. Its no-code platform enables businesses to launch natural, real-time voice agents that cut call costs, boost CSAT, and automate customer conversations—without scripts or hold times.
 
 ### [BrowseComp: a benchmark for browsing agents](https://openai.com/index/browsecomp) (10/04/2025)
 
@@ -46,7 +63,7 @@ We’ve observed agents discovering progressively more complex tool use while pl
 
 ### [Neural MMO: A massively multiagent game environment](https://openai.com/index/neural-mmo) (04/03/2019)
 
-We’re releasing a Neural MMO, a massively multiagent game environment for reinforcement learning agents. Our platform supports a large, variable number of agents within a persistent and open-ended task. The inclusion of many agents and species leads to better exploration, divergent niche formation, and greater overall competence.
+We’re releasing a Neural MMO, a massively multiagent game environment for reinforcement learning agents. Our platform supports a large, variable number of agents within a persistent and open-ended task. The inclusion of many agents and species leads to better exploration, divergent niche formation, and greater overall competence.
 
 ### [Learning policy representations in multiagent systems](https://openai.com/index/learning-policy-representations-in-multiagent-systems) (17/06/2018)
 
