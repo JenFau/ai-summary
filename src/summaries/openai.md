@@ -11,7 +11,7 @@ summary: |
 
 ### [ChatGPT agent System Card](https://openai.com/index/chatgpt-agent-system-card) (17/07/2025)
 
-ChatGPT agent System Card: OpenAI’s agentic model unites research, browser automation, and code tools with safeguards under the Preparedness Framework.
+ChatGPT agent System Card: OpenAI’s agentic model unites research, browser automation, and code tools with safeguards under the Preparedness Framework..
 
 ### [Introducing ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent) (17/07/2025)
 
