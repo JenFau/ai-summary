@@ -1,3 +1,4 @@
+---
 title: OpenAI Updates
 source: openai
 last_updated: 2025-08-11T14:40:59.506Z
