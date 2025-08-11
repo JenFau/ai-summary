@@ -1,5 +1,4 @@
-{   "parameters": {     "owner": "JenFau",     "repository": "ai-summary",     "filePath": "src/summaries/openai.md",     "branch": "main",     "binaryData": false,     "fileContent": "---
-title: OpenAI Updates
+: OpenAI Updates
 source: openai
 last_updated: 2025-08-11T14:40:59.506Z
 layout: post.njk
@@ -7,34 +6,6 @@ tags: [openai]
 summary: |
   AI tool updates from the OpenAI blog RSS feed.
 ---
-
-## 11 August 2025
-
-### [GPT-5 and the new era of work](https://openai.com/index/gpt-5-new-era-of-work) (07/08/2025)  GPT-5 is OpenAI’s most advanced model—transforming enterprise AI, automation, and workforce productivity in the new era of intelligent work.
-
-### [Introducing GPT-5 for developers](https://openai.com/index/introducing-gpt-5-for-developers) (07/08/2025)  Introducing GPT-5 in our API platform—offering high reasoning performance, new controls for devs, and best-in-class results on real coding tasks.
-
-### [Introducing GPT-5](https://openai.com/index/introducing-gpt-5) (07/08/2025)  We are introducing GPT‑5, our best AI system yet. GPT‑5 is a significant leap in intelligence over all our previous models, featuring state-of-the-art performance across coding, math, writing, health, visual perception, and more.
-
-### [From hard refusals to safe-completions: toward output-centric safety training](https://openai.com/index/gpt-5-safe-completions) (07/08/2025)  Discover how OpenAI's new safe-completions approach in GPT-5 improves both safety and helpfulness in AI responses—moving beyond hard refusals to nuanced, output-centric safety training for handling dual-use prompts.
-
-### [GPT-5 System Card](https://openai.com/index/gpt-5-system-card) (07/08/2025)  This GPT-5 system card explains how a unified model routing system powers fast and smart responses using gpt-5-main, gpt-5-thinking, and lightweight versions like gpt-5-thinking-nano, optimized for different tasks and developer use.
-
-### [Providing ChatGPT to the Entire U.S. Federal Workforce](https://openai.com/index/providing-chatgpt-to-the-entire-us-federal-workforce) (06/08/2025)  Today, OpenAI for Government is announcing a new partnership with the U.S. General Services Administration (GSA) to launch a transformative initiative. For the next year, ChatGPT Enterprise will be available to the entire federal executive branch workforce at essentially no cost.
-
-### [Estimating worst case frontier risks of open weight LLMs](https://openai.com/index/estimating-worst-case-frontier-risks-of-open-weight-llms) (05/08/2025)  In this paper, we study the worst-case frontier risks of releasing gpt-oss. We introduce malicious fine-tuning (MFT), where we attempt to elicit maximum capabilities by fine-tuning gpt-oss to be as capable as possible in two domains: biology and cybersecurity.
-
-### [Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss) (05/08/2025)  We’re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware.
-
-### [gpt-oss-120b & gpt-oss-20b Model Card](https://openai.com/index/gpt-oss-model-card) (05/08/2025)  We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy.
-
-### [Open Weights and AI for All](https://openai.com/global-affairs/open-weights-and-ai-for-all) (05/08/2025)  AI’s next frontier isn’t just about capability—it’s about who gets to use it. Our mission to put AI in the hands of as many people as possible is what drives us. Today’s release of our most capable  open-weights models is a major step forward that makes advanced AI more open, flexible, and accessible worldwide.
-
-### [What we’re optimizing ChatGPT for](https://openai.com/index/how-we're-optimizing-chatgpt) (04/08/2025)  We build ChatGPT to help you thrive in all the ways you want. Learn how we're improving support for tough moments, have rolled out reminders to take breaks, and are working on better life advice, all guided by expert input.
-
-### [Figma uses AI to transform digital design](https://openai.com/index/figma-david-kossnick) (01/08/2025)  Discover how Figma is transforming digital design with AI. David Kossnick shares how tools like Figma Make empower teams to prototype, collaborate, and build with AI—reshaping workflows for designers, developers, and non-technical creators alike.
-
-### [Introducing Stargate Norway](https://openai.com/index/introducing-stargate-norway) (31/07/2025)  We’re launching Stargate Norway—OpenAI’s first AI data center initiative in Europe under our OpenAI for Countries program. Stargate is OpenAI’s overarching infrastructure platform and is a critical part of our long-term vision to deliver the benefits of AI to everyone.
 
 ## 30 July 2025
 
@@ -99,4 +70,3 @@ We’re releasing a Neural MMO, a massively multiagent game environment for rei
 
 
 ### [Emergence of grounded compositional language in multi-agent populations](https://openai.com/index/emergence-of-grounded-compositional-language-in-multi-agent-populations) (15/03/2017)
-",     "commitMessage": "Update OpenAI updates 2025-08-11T10:40:59.778-04:00",     "encoding": "utf8"   },   "name": "GitHub Edit File",   "type": "n8n-nodes-base.github",   "typeVersion": 2,   "position": [0, 0],   "credentials": {     "githubApi": "YOUR_GITHUB_CREDENTIAL_NAME"   } }
