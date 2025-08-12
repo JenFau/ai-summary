@@ -11,6 +11,6 @@ summary: |
 
 # 1 July 2025
  
- Some text here
+ Some text here. 
  
 
