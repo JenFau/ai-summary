@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: Google Workspace Updates
 source: googleworkspace
