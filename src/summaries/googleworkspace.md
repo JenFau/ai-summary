@@ -5,7 +5,7 @@ last_updated: 2025-08-12T18:44:46.792Z
 layout: post.njk
 tags: [googleworkspace]
 summary: |
-AI tool updates from the Google Workspace blog RSS feed.
+  AI tool updates from the Google Workspace blog RSS feed.
 ---
 
 ## 12 August 2025
