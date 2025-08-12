@@ -11,8 +11,9 @@ This site provides human-readable summaries of changes across key AI tools and s
 
 - [OpenAI](./summaries/openai)
 - [Google Workspace](./summaries/googleworkspace)
+- [Google Blog](./summaries/googleblog)
 
-- [All sources](./whats-changed.md)
+
 
 ## Notes
 
