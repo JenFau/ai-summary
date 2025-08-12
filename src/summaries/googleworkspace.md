@@ -7,3 +7,5 @@ tags: [googleworkspace]
 summary: |
   AI tool updates from the Google Workspace blog RSS feed.
 ---
+
+This is the body text from this
