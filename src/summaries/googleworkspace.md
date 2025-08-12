@@ -2,14 +2,14 @@
 ---
  title: Google Workspace Updates
 source: googleworkspace
-last_updated: 2025-08-12T17:02:20.227Z
+last_updated: 2025-08-12T17:04:06.264Z
 layout: post.njk
 tags: [googleworkspace]
 summary: |
   AI tool updates from the Google Workspace blog RSS feed.
 ---
 
- =## 12 August 2025
+ ## 12 August 2025
 
 ### 12 Aug 2025 – Adding NotebookLM and Gems to Gemini Learning Tools Interoperability (LTI™)
 [Read more](http://workspaceupdates.googleblog.com/2025/08/adding-notebooklm-gems-gemini-lti.html)
