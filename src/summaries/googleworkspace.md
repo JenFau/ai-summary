@@ -134,9 +134,3 @@ AppSheet Enterprise Plus users can now integrate the new AI Task powered by Gemi
 [Read more](http://workspaceupdates.googleblog.com/2025/07/use-gemini-in-google-docs-on-ios-devices.html)
 
 Google is bringing Gemini’s AI capabilities to Google Docs on iOS devices, enabling users to better understand, summarize, and query documents on the go in over 20 languages. Available to Google Workspace business plan users on iOS 16+ phones and tablets, Gemini allows generating summaries, asking detailed questions, and drafting content without switching apps. While some features like "Help me write" and image generation aren’t yet available on mobile, users can access Gemini via the spark icon in Docs. The rollout begins July 16, 2025 for Rapid Release domains and August 18, 2025 for Scheduled Release domains. This feature is supported in Business Standard and Plus, Enterprise Standard and Plus, and select Gemini add-on plans, with some add-ons being phased out starting January 2025.
-
-
-## 1 July 2025
- 
- Some text here.
-
