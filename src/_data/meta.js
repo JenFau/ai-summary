@@ -1,7 +1,7 @@
 export const url = process.env.URL || 'http://localhost:8080';
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
-export const siteName = 'Jenny Faulkner';
+export const siteName = 'Jenny Faulkner - AI notes';
 export const siteDescription = 'Eleventy starter for building modern, resilient websites';
 export const siteType = 'Person'; // schema
 export const locale = 'en_EN';
