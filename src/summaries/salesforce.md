@@ -1,11 +1,11 @@
 ---
-title: Slack Blog Updates
-source: slack
+title: Salesforce Blog Updates
+source: salesforce
 last_updated: 2025-08-12T20:51:02.512Z
 layout: post.njk
-tags: [slack]
+tags: [salesforce]
 summary: |
-  AI tool updates from the Google blog RSS feed.
+  AI tool updates from the Salesforce blog RSS feed.
 ---
 
 ## 12 August 2025

@@ -5,7 +5,7 @@ last_updated: 2025-08-12T20:23:58.399Z
 layout: post.njk
 tags: [atlassian]
 summary: |
-  AI tool updates from the OpenAI blog RSS feed.
+  AI tool updates from the Atlassian blog RSS feed.
 ---
 
 ## 12 August 2025

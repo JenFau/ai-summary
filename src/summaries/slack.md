@@ -1,11 +1,11 @@
 ---
-title: OpenAI Updates
-source: openai
+title: Slack Updates
+source: slack
 last_updated: 2025-08-12T20:42:19.542Z
 layout: post.njk
-tags: [openai]
+tags: [slack]
 summary: |
-  AI tool updates from the OpenAI blog RSS feed.
+  AI tool updates from the Slack blog RSS feed.
 ---
 
 ## 12 August 2025
