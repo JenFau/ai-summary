@@ -1,5 +1,5 @@
 
-=---
+---
  title: Google Workspace Updates
 source: googleworkspace
 last_updated: 2025-08-12T17:02:20.227Z
