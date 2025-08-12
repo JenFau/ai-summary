@@ -13,6 +13,8 @@ This site provides human-readable summaries of changes across key AI tools and s
 - [Google Workspace](./summaries/googleworkspace)
 - [Google Blog](./summaries/googleblog)
 - [Atlassian](./summaries/atlassian)
+- [Slack](./summaries/slack)
+- [Salesforce](./summaries/salesforce)
 
 
 ## Notes
