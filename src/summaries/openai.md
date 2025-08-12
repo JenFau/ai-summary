@@ -1,7 +1,7 @@
 ---
 title: OpenAI Updates
 source: openai
-last_updated: 2025-08-12T18:14:02.104Z
+last_updated: 2025-08-12T19:04:21.760Z
 layout: post.njk
 tags: [openai]
 summary: |
@@ -10,73 +10,102 @@ summary: |
 
 ## 12 August 2025
 
-### [Scaling accounting capacity with OpenAI](https://openai.com/index/basis) (12/08/2025)
+### [Scaling accounting capacity with OpenAI](https://openai.com/index/basis) ()
 
 Built with OpenAI o3, o3-Pro, GPT-4.1, and GPT-5, Basis’ AI agents help accounting firms save up to 30% of their time and expand capacity for advisory and growth.
 
-## 11 August 2025
 
-### [GPT-5 and the new era of work](https://openai.com/index/gpt-5-new-era-of-work) (07/08/2025)
+### [GPT-5 and the new era of work](https://openai.com/index/gpt-5-new-era-of-work) ()
 
 GPT-5 is OpenAI’s most advanced model—transforming enterprise AI, automation, and workforce productivity in the new era of intelligent work.
 
 
-### [Introducing GPT-5 for developers](https://openai.com/index/introducing-gpt-5-for-developers) (07/08/2025)
+### [Introducing GPT-5 for developers](https://openai.com/index/introducing-gpt-5-for-developers) ()
 
 Introducing GPT-5 in our API platform—offering high reasoning performance, new controls for devs, and best-in-class results on real coding tasks.
 
 
-### [Introducing GPT-5](https://openai.com/index/introducing-gpt-5) (07/08/2025)
+### [Coding and design with GPT-5](https://openai.com/index/gpt-5-coding-design) ()
 
-We are introducing GPT‑5, our best AI system yet. GPT‑5 is a significant leap in intelligence over all our previous models, featuring state-of-the-art performance across coding, math, writing, health, visual perception, and more.
+Learn how GPT-5 unlocks new possibilities in coding and design.
 
 
-### [From hard refusals to safe-completions: toward output-centric safety training](https://openai.com/index/gpt-5-safe-completions) (07/08/2025)
+### [Creative writing with GPT-5](https://openai.com/index/gpt-5-creative-writing) ()
+
+Learn how GPT-5 assists with creative writing.
+
+
+### [Medical research with GPT-5](https://openai.com/index/gpt-5-medical-research) ()
+
+Learn how GPT-5 is used for medical research.
+
+
+### [How Cursor uses GPT-5](https://openai.com/index/gpt-5-cursor) ()
+
+Learn how Cursor uses GPT-5.
+
+
+### [From hard refusals to safe-completions: toward output-centric safety training](https://openai.com/index/gpt-5-safe-completions) ()
 
 Discover how OpenAI's new safe-completions approach in GPT-5 improves both safety and helpfulness in AI responses—moving beyond hard refusals to nuanced, output-centric safety training for handling dual-use prompts.
 
 
-### [GPT-5 System Card](https://openai.com/index/gpt-5-system-card) (07/08/2025)
+### [First look at GPT-5](https://openai.com/index/gpt-5-first-look) ()
+
+See how a group of leading developers use GPT-5 for the first time.
+
+
+### [GPT-5 System Card](https://openai.com/index/gpt-5-system-card) ()
 
 This GPT-5 system card explains how a unified model routing system powers fast and smart responses using gpt-5-main, gpt-5-thinking, and lightweight versions like gpt-5-thinking-nano, optimized for different tasks and developer use.
 
 
-### [Providing ChatGPT to the Entire U.S. Federal Workforce](https://openai.com/index/providing-chatgpt-to-the-entire-us-federal-workforce) (06/08/2025)
+### [How Amgen uses GPT-5](https://openai.com/index/gpt-5-amgen) ()
+
+Learn how Amgen uses GPT-5.
+
+
+### [Introducing GPT-5](https://openai.com/index/introducing-gpt-5) ()
+
+We are introducing GPT‑5, our best AI system yet. GPT‑5 is a significant leap in intelligence over all our previous models, featuring state-of-the-art performance across coding, math, writing, health, visual perception, and more.
+
+
+### [Providing ChatGPT to the Entire U.S. Federal Workforce](https://openai.com/index/providing-chatgpt-to-the-entire-us-federal-workforce) (Wed, 06 Aug 2025 00:00:00 GM)
 
 Today, OpenAI for Government is announcing a new partnership with the U.S. General Services Administration (GSA) to launch a transformative initiative. For the next year, ChatGPT Enterprise will be available to the entire federal executive branch workforce at essentially no cost.
 
 
-### [Estimating worst case frontier risks of open weight LLMs](https://openai.com/index/estimating-worst-case-frontier-risks-of-open-weight-llms) (05/08/2025)
-
-In this paper, we study the worst-case frontier risks of releasing gpt-oss. We introduce malicious fine-tuning (MFT), where we attempt to elicit maximum capabilities by fine-tuning gpt-oss to be as capable as possible in two domains: biology and cybersecurity.
-
-
-### [Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss) (05/08/2025)
-
-We’re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware.
-
-
-### [gpt-oss-120b & gpt-oss-20b Model Card](https://openai.com/index/gpt-oss-model-card) (05/08/2025)
-
-We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy.
-
-
-### [Open Weights and AI for All](https://openai.com/global-affairs/open-weights-and-ai-for-all) (05/08/2025)
+### [Open Weights and AI for All](https://openai.com/global-affairs/open-weights-and-ai-for-all) ()
 
 AI’s next frontier isn’t just about capability—it’s about who gets to use it. Our mission to put AI in the hands of as many people as possible is what drives us. Today’s release of our most capable  open-weights models is a major step forward that makes advanced AI more open, flexible, and accessible worldwide.
 
 
-### [What we’re optimizing ChatGPT for](https://openai.com/index/how-we're-optimizing-chatgpt) (04/08/2025)
+### [Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss) ()
+
+We’re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware. 
+
+
+### [Estimating worst case frontier risks of open weight LLMs](https://openai.com/index/estimating-worst-case-frontier-risks-of-open-weight-llms) ()
+
+In this paper, we study the worst-case frontier risks of releasing gpt-oss. We introduce malicious fine-tuning (MFT), where we attempt to elicit maximum capabilities by fine-tuning gpt-oss to be as capable as possible in two domains: biology and cybersecurity.
+
+
+### [gpt-oss-120b & gpt-oss-20b Model Card](https://openai.com/index/gpt-oss-model-card) ()
+
+We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy.
+
+
+### [What we’re optimizing ChatGPT for](https://openai.com/index/how-we're-optimizing-chatgpt) (Mon, 04 Aug 2025 00:00:00 GM)
 
 We build ChatGPT to help you thrive in all the ways you want. Learn how we're improving support for tough moments, have rolled out reminders to take breaks, and are working on better life advice, all guided by expert input.
 
 
-### [Figma uses AI to transform digital design](https://openai.com/index/figma-david-kossnick) (01/08/2025)
+### [Figma uses AI to transform digital design](https://openai.com/index/figma-david-kossnick) (Fri, 01 Aug 2025 00:00:00 GM)
 
 Discover how Figma is transforming digital design with AI. David Kossnick shares how tools like Figma Make empower teams to prototype, collaborate, and build with AI—reshaping workflows for designers, developers, and non-technical creators alike.
 
 
-### [Introducing Stargate Norway](https://openai.com/index/introducing-stargate-norway) (31/07/2025)
+### [Introducing Stargate Norway](https://openai.com/index/introducing-stargate-norway) ()
 
 We’re launching Stargate Norway—OpenAI’s first AI data center initiative in Europe under our OpenAI for Countries program. Stargate is OpenAI’s overarching infrastructure platform and is a critical part of our long-term vision to deliver the benefits of AI to everyone.
 
