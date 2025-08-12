@@ -1,11 +1,11 @@
 ---
-title: OpenAI Updates
-source: openai
+title: Google Blog Updates
+source: googleblog
 last_updated: 2025-07-12T20:11:39.835Z
 layout: post.njk
-tags: [openai]
+tags: [googleblog]
 summary: |
-  AI tool updates from the OpenAI blog RSS feed.
+  AI tool updates from the Google blog RSS feed.
 ---
 
 
