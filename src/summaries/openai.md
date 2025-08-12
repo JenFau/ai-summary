@@ -1,12 +1,216 @@
 ---
 title: OpenAI Updates
 source: openai
-last_updated: 2025-08-12T18:14:02.104Z
+last_updated: 2025-08-12T19:01:01.109Z
 layout: post.njk
 tags: [openai]
 summary: |
   AI tool updates from the OpenAI blog RSS feed.
 ---
+
+## 12 August 2025
+
+### [Scaling accounting capacity with OpenAI](https://openai.com/index/basis) ()
+
+
+
+
+### [GPT-5 and the new era of work](https://openai.com/index/gpt-5-new-era-of-work) ()
+
+
+
+
+### [Introducing GPT-5 for developers](https://openai.com/index/introducing-gpt-5-for-developers) ()
+
+
+
+
+### [Coding and design with GPT-5](https://openai.com/index/gpt-5-coding-design) ()
+
+
+
+
+### [Creative writing with GPT-5](https://openai.com/index/gpt-5-creative-writing) ()
+
+
+
+
+### [Medical research with GPT-5](https://openai.com/index/gpt-5-medical-research) ()
+
+
+
+
+### [How Cursor uses GPT-5](https://openai.com/index/gpt-5-cursor) ()
+
+
+
+
+### [From hard refusals to safe-completions: toward output-centric safety training](https://openai.com/index/gpt-5-safe-completions) ()
+
+
+
+
+### [First look at GPT-5](https://openai.com/index/gpt-5-first-look) ()
+
+
+
+
+### [GPT-5 System Card](https://openai.com/index/gpt-5-system-card) ()
+
+
+
+
+### [How Amgen uses GPT-5](https://openai.com/index/gpt-5-amgen) ()
+
+
+
+
+### [Introducing GPT-5](https://openai.com/index/introducing-gpt-5) ()
+
+
+
+
+### [Providing ChatGPT to the Entire U.S. Federal Workforce](https://openai.com/index/providing-chatgpt-to-the-entire-us-federal-workforce) (Wed, 06 Aug 2025 00:00:00 GM)
+
+
+
+
+### [Open Weights and AI for All](https://openai.com/global-affairs/open-weights-and-ai-for-all) ()
+
+
+
+
+### [Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss) ()
+
+
+
+
+### [Estimating worst case frontier risks of open weight LLMs](https://openai.com/index/estimating-worst-case-frontier-risks-of-open-weight-llms) ()
+
+
+
+
+### [gpt-oss-120b & gpt-oss-20b Model Card](https://openai.com/index/gpt-oss-model-card) ()
+
+
+
+
+### [What we’re optimizing ChatGPT for](https://openai.com/index/how-we're-optimizing-chatgpt) (Mon, 04 Aug 2025 00:00:00 GM)
+
+
+
+
+### [Figma uses AI to transform digital design](https://openai.com/index/figma-david-kossnick) (Fri, 01 Aug 2025 00:00:00 GM)
+
+
+
+
+### [Introducing Stargate Norway](https://openai.com/index/introducing-stargate-norway) ()
+
+
+
+
+### [Three lessons for creating a sustainable AI advantage](https://openai.com/index/intercom) (Wed, 30 Jul 2025 00:00:00 GM)
+
+
+
+
+### [Introducing study mode in ChatGPT](https://openai.com/index/chatgpt-study-mode) ()
+
+
+
+
+### [Resolving digital threats 100x faster with OpenAI](https://openai.com/index/outtake) ()
+
+
+
+
+### [Model ML is helping financial firms rebuild with AI from the ground up](https://openai.com/index/model-ml-chaz-englander) (Wed, 23 Jul 2025 00:00:00 GM)
+
+
+
+
+### [Announcing OpenAI DevDay 2025](https://openai.com/index/announcing-devday-2025) (Wed, 23 Jul 2025 00:00:00 GM)
+
+
+
+
+### [Pioneering an AI clinical copilot with Penda Health](https://openai.com/index/ai-clinical-copilot-penda-health) ()
+
+
+
+
+### [OpenAI’s new economic analysis ](https://openai.com/global-affairs/new-economic-analysis) ()
+
+
+
+
+### [Stargate advances with 4.5 GW partnership with Oracle](https://openai.com/index/stargate-advances-with-partnership-with-oracle) ()
+
+
+
+
+### [OpenAI and UK Government announce strategic partnership to deliver AI-driven growth](https://openai.com/global-affairs/openai-and-uk-government-partnership) (Mon, 21 Jul 2025 10:00:00 GM)
+
+
+
+
+### [AI as the greatest source of empowerment for all](https://openai.com/index/ai-as-the-greatest-source-of-empowerment-for-all) (Mon, 21 Jul 2025 00:00:00 GM)
+
+
+
+
+### [A $50 million fund to build with communities](https://openai.com/index/50-million-fund-to-build-with-communities) (Fri, 18 Jul 2025 00:00:00 GM)
+
+
+
+
+### [ChatGPT agent System Card](https://openai.com/index/chatgpt-agent-system-card) ()
+
+
+
+
+### [Introducing ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent) ()
+
+
+
+
+### [Statement from the OpenAI Board of Directors on the Nonprofit Commission Report](https://openai.com/index/nonprofit-commission-report) ()
+
+
+
+
+### [Agent bio bug bounty call](https://openai.com/bio-bug-bounty) ()
+
+
+
+
+### [OpenAI nonprofit jam](https://openai.com/global-affairs/openai-nonprofit-jam) ()
+
+
+
+
+### [Invideo AI uses OpenAI models to create videos 10x faster](https://openai.com/index/invideo-ai) ()
+
+
+
+
+### [Intellectual freedom by design](https://openai.com/global-affairs/intellectual-freedom-by-design) ()
+
+
+
+
+### [The EU Code of Practice and future of AI in Europe](https://openai.com/global-affairs/eu-code-of-practice) (Fri, 11 Jul 2025 09:30:00 GM)
+
+
+
+
+### [Sam & Jony](https://openai.com/sam-and-jony) (Wed, 09 Jul 2025 00:00:00 GM)
+
+
+
+
+### [Working with 400,000 teachers to shape the future of AI in schools](https://openai.com/global-affairs/aft) ()
 
 ## 12 August 2025
 
