@@ -7,11 +7,9 @@ tags: [googleworkspace]
 summary: |
   AI tool updates from the Google Workspace blog RSS feed.
 ---
-## 12 August 2025
-
-# 1 July 2025
+## 1 July 2025
  
- Some text here
+ Some text here. 
  
 
 
