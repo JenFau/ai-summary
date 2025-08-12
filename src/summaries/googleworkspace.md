@@ -1,6 +1,6 @@
 
 ---
- title: Google Workspace Updates
+title: Google Workspace Updates
 source: googleworkspace
 last_updated: 2025-08-12T17:10:28.837Z
 layout: post.njk
