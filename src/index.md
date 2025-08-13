@@ -3,11 +3,13 @@ title: AI Summary Hub
 layout: base.njk
 ---
 
-# AI Summary Hub
+# AI Information Hub
 
-This site provides human-readable summaries of changes across key AI tools and services.
+This site aims to provide an overview of changes across key AI tools and services, as well as summaries of useful papers. 
 
-## Sources
+## Vendor blog updates
+
+The following pages collect blog updates from tooling vendors
 
 - [OpenAI](./summaries/openai)
 - [Google Workspace](./summaries/googleworkspace)
@@ -15,7 +17,12 @@ This site provides human-readable summaries of changes across key AI tools and s
 - [Atlassian](./summaries/atlassian)
 - [Slack](./summaries/slack)
 - [Salesforce](./summaries/salesforce)
+- Anthropic (coming soon)
+- Perplexity (coming soon)
 
-## Papers
+## Papers & articles
 
 - [Agents](./summaries/labels/agents)
+- [AI](./summaries/labels/ai)
+- [Strategy](./summaries/labels/strategy)
+- [MCP](./summaries/labels/mcp)
