@@ -10,7 +10,7 @@ summary: |
 ## Source and link
 - Authors: Plandek research team
 - Venue: Plandek 2025 Intelligence Report
-- Link: (https://drive.google.com/file/d/10qiK9jq1yW1aYE1OmM9Fzg9oa61jlYuA/view?usp=drive_link)
+- Link: (https://drive.google.com/file/d/10qiK9jq1yW1aYE1OmM9Fzg9oa61jlYuA/view?usp=drive_link) 
   
 ## What the paper claims
 The report argues that generative AI is being adopted at unprecedented speed in software engineering, but its transformative potential will only be realised if organisations professionalise their approach — implementing robust measurement, risk management, and structured integration into delivery processes.
