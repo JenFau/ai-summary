@@ -1,0 +1,13 @@
+---
+title: Summary labels
+layout: base
+permalink: /summaries/labels/index.html
+---
+
+<h1>Labels for summaries</h1>
+
+<ul class="summary-list">
+  {% for t in collections.summaryTagList %}
+    <li><a href="/summaries/labels/{{ t | slug }}/">{{ t }}</a></li>
+  {% endfor %}
+</ul>

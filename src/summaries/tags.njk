@@ -1,0 +1,12 @@
+---
+pagination:
+  data: collections.summaryTagList     # summaries-only tag list
+  size: 1
+  alias: tag
+permalink: "summaries/labels/{{ tag | slug }}/index.html"
+layout: summary-tag.njk
+eleventyComputed:
+  title: "Summaries tagged “{{ tag }}”"
+---
+
+{# Content is rendered by layout `summary-tag.njk` #}
