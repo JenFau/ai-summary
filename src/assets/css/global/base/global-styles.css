@@ -8,29 +8,23 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 1.0625rem;            /* ≈17px */
-  line-height: 1.75;               /* improved readability */
-  body {
-  max-width: none; /* remove narrow central column */
+  font-size: 1.0625rem;              /* ≈17px */
+  line-height: 1.75;                 /* improved readability */
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  max-width: none;                   /* prevent unwanted body wrapping */
 }
 
 main {
-  max-width: 70ch;
+  max-width: 70ch;                   /* ideal reading width */
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-  margin: 0 auto;
-  padding: 1rem 1rem 2rem;         /* reduced top padding */
-  color: #1a1a1a;
-  background-color: #ffffff;
-}
-
-main {
   flex: auto;
-  margin-top: 0;                   /* override layout spacing if present */
+  margin-top: 0;
 }
 
 /* Refined heading styles */
@@ -38,32 +32,32 @@ main {
 h1, h2, h3, h4 {
   font-weight: 500;
   line-height: 1.3;
-  margin-top: 0;              /* tighter vertical rhythm */
-  margin-bottom: 0.5rem;
+  margin-top: 2rem;                 /* vertical rhythm */
+  margin-bottom: 0.25rem;           /* tight spacing to following paragraph */
   letter-spacing: -0.015em;
 }
 
 h1 {
-  font-size: 1.75rem;              /* ≈28px */
+  font-size: 1.75rem;               /* ≈28px */
 }
 
 h2 {
-  font-size: 1.5rem;               /* ≈24px */
+  font-size: 1.5rem;                /* ≈24px */
 }
 
 h3 {
-  font-size: 1.25rem;              /* ≈20px */
+  font-size: 1.25rem;               /* ≈20px */
 }
 
 h4 {
-  font-size: 1.125rem;             /* ≈18px */
+  font-size: 1.125rem;              /* ≈18px */
 }
 
 p,
 ul,
 ol,
 blockquote {
-  margin-bottom: 1rem;             /* slightly reduced paragraph spacing */
+  margin-bottom: 1rem;
 }
 
 ul,
@@ -112,6 +106,8 @@ a:not([class]):hover {
   background-color: #1a1a1a;
   color: #ffffff;
 }
+
+/* Suppress unwanted spacing on region wrappers */
 
 .region {
   --region-space-top: 0;
