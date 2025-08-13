@@ -44,7 +44,8 @@
 
     {% include "partials/header.njk" %}
 
-    <!-- <main id="main" class="flow">{{ content | safe }}</main> -->
+  <main id="main">{{ content | safe }}</main>
+
 
     {% include "partials/footer.njk" %}
     {%- if meta.easteregg -%}
