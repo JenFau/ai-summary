@@ -10,7 +10,18 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 1.0625rem;            /* ≈17px */
   line-height: 1.75;               /* improved readability */
-  max-width: 650px;
+  body {
+  max-width: none; /* remove narrow central column */
+}
+
+main {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
   margin: 0 auto;
   padding: 1rem 1rem 2rem;         /* reduced top padding */
   color: #1a1a1a;
