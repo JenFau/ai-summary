@@ -1,0 +1,37 @@
+---
+title: "AI agents for customer experience"
+date: 2025-04-01
+layout: summary.njk
+tags: [agents, ai, implementation]
+summary: |
+  Opus Research argues that firms should move beyond cost-cutting chatbots to agentic AI that proactively diagnoses and resolves customer issues across channels. The report outlines an AI maturity model and practical starting points to improve self-service and augment human agents.
+---
+
+## Source and link
+- Authors: Amy Stapleton (Senior Analyst, Opus Research)
+- Venue: Opus Research report (April 2025)
+- Link: https://drive.google.com/file/d/1wrawziSq-H22-g7I77l5Ns1LCVWYFeJz/view?usp=drive_link 
+
+## What the paper claims
+The report contends that “agentic” AI—LLM-powered systems that can plan, take action and coordinate across back-end workflows—can transform customer experience from reactive, scripted interactions to proactive, end-to-end resolution. It urges organisations to focus AI on creating delightful CX outcomes rather than narrow automation or cost reduction.
+
+## Methods or approach
+This is an analyst perspective that synthesises market observations, a three-stage AI maturity model (Beginner → Intermediate → Advanced), and a poll of CX leaders used illustratively (including a headline statistic on self-assessed maturity). It provides scenario narratives contrasting traditional vs agentic AI, and prescriptive guidance for sequencing use cases.
+
+## Key findings
+- Most organisations remain at a “Beginner” maturity, relying on legacy IVR, scripted chatbots, and limited integrations; a cited poll reports 63% self-placing at this level.
+- Agentic AI differs by orchestrating multi-step actions (e.g., updating self-service, sending proactive updates, monitoring outcomes) rather than merely surfacing insights.
+- Well-designed GenAI self-service can become customers’ preferred entry point when it preserves context, solves problems directly, and hands off seamlessly to humans when needed.
+
+## Limitations and caveats
+- The report is conceptual and persuasive; it does not detail sampling, methodology, or quantitative results beyond a brief poll reference.
+- It includes links to vendor resources, so recommendations may align with capabilities typical of that ecosystem.
+
+## Implications for practitioners
+- Start with high-friction tasks (e.g., call summarisation, knowledge retrieval), measure impact, and expand to orchestration across CRM/ERP once foundations and data access are in place.
+- Shift success metrics from containment and handle time to customer effort, proactive resolution, and quality of human–AI collaboration.
+
+## Notable passages quoted
+> "Generative AI isn't just another tech tool – it's opening doors to experiences we could barely dream of before." — “Thinking Big with AI”
+
+> "Agentic AI doesn't just spot the fire - it grabs the extinguisher and starts putting it out." — “Agentic AI: The Proactive Problem-Solver”
