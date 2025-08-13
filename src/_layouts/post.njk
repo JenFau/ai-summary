@@ -3,26 +3,23 @@ layout: base
 schema: BlogPosting
 ---
 
-<div class="region" style="--region-space-top: var(--space-xl-2xl)">
-  <div class="wrapper flow prose">
-    <h1 style="color: var(--color-primary)">{{ title }}</h1>
+<div class="region" style="--region-space-top: 0; --region-space-bottom: 0; padding-top: 0; margin-top: 0;">
+  <div class="wrapper prose" style="max-width: 75ch; padding-top: 0; margin-top: 0;">
+    <h1 style="color: var(--color-primary); margin-top: 0; margin-bottom: 0.5rem;">{{ title }}</h1>
 
     {% if image %}
       <!-- image -->
       {% image image, alt or "", credit, "eager", "feature" %}
     {% endif %}
 
-    <p class="meta | cluster gutter-xs-s">
+    <p class="meta | cluster gutter-xs-s" style="margin-bottom: 1rem;">
       <!-- draft status -->
       {%- if draft -%}
         <span class="button" data-small-button data-button-variant="tertiary">draft</span>
       {%- endif %}
       <!-- date -->
       {% set definedDate = date %} {% include "partials/date.njk" %}
-      {%
-        if tags.length >
-        1
-      %}
+      {% if tags.length > 1 %}
         <!-- tags -->
         {% for tag in tags %}{% if tag != "posts" %}
           <a class="button" href="/tags/{{ tag | slugify }}/" data-small-button> {{ tag }} </a>
@@ -31,7 +28,7 @@ schema: BlogPosting
     </p>
 
     {{ content | safe }}
-    {% include 'partials/edit-on.njk' %}
+    {% include "partials/edit-on.njk" %}
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
