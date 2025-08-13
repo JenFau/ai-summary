@@ -10,7 +10,7 @@ summary: |
 ## Source and link
 - Authors: Stephanie Liu, Craig Le Clair, Christina McAllister, with contributors Emily Collins, Brian Hopkins, David Mooter, J. P. Gownder, Ted Schadler, Leslie Joseph, Manuel Geitz, Chris Gardner, Anna Hoskins, Christine Turley
 - Venue: Forrester Research report
-- Link: <no public link provided>
+- Link: https://reprint.forrester.com/reprints/the-state-of-ai-agents-2024-25f33353 
 
 ## What the paper claims
 AI agents—autonomous systems capable of understanding context, making decisions, and executing actions—represent a significant advancement in AI, with near-term business benefits and longer-term consumer potential. Adoption will be shaped by technological maturity, regulatory environments, and organisational readiness.
