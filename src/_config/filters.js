@@ -16,3 +16,12 @@ export default {
   sortAlphabetically,
   slugifyString
 };
+
+// Normalise a Nunjucks-style `| date` filter to your existing formatting.
+// Uses en-GB by default and supports Date|string|number.
+export function date(value, locale = 'en-GB', options = { day: '2-digit', month: 'short', year: 'numeric' }) {
+  if (!value) return '';
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return '';
+  return d.toLocaleDateString(locale, options);
+}

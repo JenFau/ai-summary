@@ -14,6 +14,9 @@ dotenv.config();
 // add yaml support
 import yaml from 'js-yaml';
 
+// third-party
+import slugify from 'slugify';
+
 //  config import
 import {getAllPosts, showInSitemap, tagList} from './src/_config/collections.js';
 import events from './src/_config/events.js';
@@ -81,6 +84,37 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('alphabetic', filters.sortAlphabetically);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
 
+
+
+  // ---- Custom filter and collections for summaries
+  eleventyConfig.addFilter("slug", (input) =>
+    slugify(input, { lower: true, strict: true })
+  );
+
+  // Collection: summaries from subfolder
+  eleventyConfig.addCollection("summaries", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("./src/summaries/papers/*.md").sort((a, b) => {
+      return b.date - a.date;
+    });
+  });
+
+  // Collection: tag list for summary tag page generation
+  eleventyConfig.addCollection("summaryTagList", function (collectionApi) {
+  const byLower = new Map();
+  collectionApi.getFilteredByGlob("./src/summaries/papers/*.md").forEach(item => {
+    const tags = item.data.tags || [];
+    tags.forEach(tag => {
+      const key = String(tag).toLowerCase();
+      if (!['posts','docs','all'].includes(tag) && !byLower.has(key)) {
+        byLower.set(key, tag);
+      }
+    });
+  });
+  return [...byLower.values()].sort((a, b) => a.localeCompare(b));
+});
+
+
+
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
   eleventyConfig.addShortcode('image', shortcodes.imageShortcode);
@@ -92,24 +126,18 @@ export default async function (eleventyConfig) {
   }
 
   // --------------------- Passthrough File Copy
-
-  // -- same path
   ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 
   eleventyConfig.addPassthroughCopy({
-    // -- to root
     'src/assets/images/favicon/*': '/',
-
-    // -- node_modules
     'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
   });
 
   // --------------------- general config
   return {
     markdownTemplateEngine: 'njk',
-
     dir: {
       output: 'dist',
       input: 'src',
