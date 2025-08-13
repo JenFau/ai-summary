@@ -9,11 +9,18 @@ export const showInSitemap = collection => {
 };
 
 /** All tags from all posts as a collection - excluding custom collections */
-export const tagList = collection => {
-  const tagsSet = new Set();
-  collection.getAll().forEach(item => {
-    if (!item.data.tags) return;
-    item.data.tags.filter(tag => !['posts', 'docs', 'all'].includes(tag)).forEach(tag => tagsSet.add(tag));
+/** All tags from all posts as a collection – excluding custom collections and deduped case-insensitively */
+/** All tags, case-insensitive de-duplication, excluding Eleventy’s utility tags */
+export const tagList = (collection) => {
+  const byLower = new Map(); // lowercased -> canonical casing
+  collection.getAll().forEach((item) => {
+    const tags = item.data.tags || [];
+    tags
+      .filter((t) => !['all', 'posts', 'docs'].includes(t))
+      .forEach((t) => {
+        const k = String(t).toLowerCase();
+        if (!byLower.has(k)) byLower.set(k, t); // keep first-seen casing
+      });
   });
-  return Array.from(tagsSet).sort();
+  return Array.from(byLower.values()).sort((a, b) => a.localeCompare(b));
 };
