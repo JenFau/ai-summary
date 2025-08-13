@@ -16,7 +16,6 @@ This site provides human-readable summaries of changes across key AI tools and s
 - [Slack](./summaries/slack)
 - [Salesforce](./summaries/salesforce)
 
-## Notes
+## Papers
 
-Occasional reflections and articles:
-- [Notes](./notes/)
+- [Agents](./summaries/labels/agents)
