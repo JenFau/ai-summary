@@ -101,3 +101,9 @@ a:not([class]):hover {
   background-color: #1a1a1a;
   color: #ffffff;
 }
+
+.region {
+  --region-space-top: 0;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
