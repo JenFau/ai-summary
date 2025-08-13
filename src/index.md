@@ -9,6 +9,12 @@ This site aims to provide an overview of changes across key AI tools and service
 
 ## Vendor blog updates
 
+| dsf | dsf | sdfd  |
+|-----|-----|-------|
+| sdf | sdf | sdfsd |
+
+
+
 The following pages collect blog updates from tooling vendors
 
 - [OpenAI](./summaries/openai)
