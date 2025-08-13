@@ -107,3 +107,8 @@ a:not([class]):hover {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
+
+main .region {
+  --region-space-top: 0 !important;
+  --region-space-bottom: 0 !important;
+}
