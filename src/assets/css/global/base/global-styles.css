@@ -8,17 +8,18 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 1.0625rem;           /* ~17px */
-  line-height: 1.75;              /* improved readability */
+  font-size: 1.0625rem;            /* ≈17px */
+  line-height: 1.75;               /* improved readability */
   max-width: 650px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem 2rem;         /* reduced top padding */
   color: #1a1a1a;
   background-color: #ffffff;
 }
 
 main {
   flex: auto;
+  margin-top: 0;                   /* override layout spacing if present */
 }
 
 /* Refined heading styles */
@@ -26,32 +27,32 @@ main {
 h1, h2, h3, h4 {
   font-weight: 500;
   line-height: 1.3;
-  margin-top: 2rem;
+  margin-top: 1.5rem;              /* tighter vertical rhythm */
   margin-bottom: 0.5rem;
   letter-spacing: -0.015em;
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 1.75rem;              /* ≈28px */
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5rem;               /* ≈24px */
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.25rem;              /* ≈20px */
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.125rem;             /* ≈18px */
 }
 
 p,
 ul,
 ol,
 blockquote {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;             /* slightly reduced paragraph spacing */
 }
 
 ul,
