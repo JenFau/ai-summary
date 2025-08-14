@@ -38,6 +38,12 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
+  // All papers (by file location), newest first
+  eleventyConfig.addCollection("allPapers", (collectionApi) => {
+  return collectionApi
+    .getFilteredByGlob("./src/summaries/papers/*.md")
+    .sort((a, b) => b.date - a.date);
+});
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
