@@ -1,14 +1,8 @@
-// src/summaries/papers/papers.11tydata.js
+// ESM export — safe with "type": "module"
 export default {
   eleventyComputed: {
-    permalink: (data) => {
-      const slug = String(data.page.fileSlug || "")
-        .toLowerCase()
-        .trim()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "");
-      return `summaries/${slug}/index.html`;
-    },
+    // e.g. /summaries/my-paper-slug/
+    permalink: (data) => `summaries/${String(data.page.fileSlug).toLowerCase()}/index.html`,
     layout: (data) => data.layout || "summary.njk",
   },
 };
