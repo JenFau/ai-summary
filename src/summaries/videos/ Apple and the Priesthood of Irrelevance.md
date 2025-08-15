@@ -7,7 +7,7 @@ tags:
   - strategy
   - ai
 last_updated: "2025-08-15T20:47:55.334Z"
-layout: post.njk
+layout: summary.njk
 ---
 
 # Apple and the Priesthood of Irrelevance
