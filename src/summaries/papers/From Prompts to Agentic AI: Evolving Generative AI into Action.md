@@ -31,7 +31,7 @@ The report uses a conceptual framework describing generative AI’s evolution in
 - Integrate agentic AI into a broader automation strategy to avoid fragmented processes and ensure cohesion.
 - Apply strong governance, security controls, and bias mitigation to protect data and maintain trust in agent-led workflows.
 
-## Notable passages quoted (optional)
+## Notable passages quoted
 > "Agentic AI enables AI to 'act' rather than just 'think' — and paves the way for more advanced and versatile general-purpose AI-based apps." — Introduction
 
 > "Once given a goal, the agent is in the driver’s seat." — Autonomy section

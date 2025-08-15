@@ -9,6 +9,8 @@
 @import 'base/variables.css' layer(variables);
 @import 'base/global-styles.css' layer(global);
 
+@import "blocks/summary-list.css";
+
 @import-glob 'compositions/*.css' layer(compositions);
 @import-glob 'blocks/*.css' layer(blocks);
 @import-glob 'utilities/*.css' layer(utilities);

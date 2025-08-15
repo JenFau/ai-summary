@@ -32,6 +32,6 @@ The paper distils insights from conversations with Fortune 500 tech leaders and 
 - Select and combine models strategically to balance performance and cost while preparing for evolving workloads.
 - Embrace governance and interoperability standards to enable scalable, compliant AI operations.
 
-## Notable passages quoted (optional)
+## Notable passages quoted
 > "If your systems cannot adapt, your AI initiatives will plateau." — AI requires a new architectural paradigm  
 > "Governance and lineage are not compliance checkboxes. They are critical infrastructure for sustainable AI development." — Intelligent interfaces and governance

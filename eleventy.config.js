@@ -18,7 +18,7 @@ import yaml from 'js-yaml';
 import slugify from 'slugify';
 
 //  config import
-import {getAllPosts, showInSitemap, tagList} from './src/_config/collections.js';
+import { getAllPosts, showInSitemap, tagList } from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
@@ -34,19 +34,37 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'post.njk');
   eleventyConfig.addLayoutAlias('tags', 'tags.njk');
 
-  //	---------------------  Collections
+  // --------------------- Collections (existing)
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
+
+  // --------------------- Collections (summaries)
   // All papers by location (newest first)
-eleventyConfig.addCollection("summaries", (collectionApi) => {
-  return collectionApi
-    .getFilteredByGlob("./src/summaries/papers/*.md")
-    .sort((a, b) => b.date - a.date);
-});
+  eleventyConfig.addCollection('summaries', (collectionApi) => {
+    return collectionApi
+      .getFilteredByGlob('./src/summaries/papers/*.md')
+      .sort((a, b) => b.date - a.date);
+  });
 
+  // Tag list for summary label pages (case-insensitive, exclude Eleventy utility tags)
+  eleventyConfig.addCollection('summaryTagList', (collectionApi) => {
+    const byLower = new Map(); // lower-case -> canonical casing
+    collectionApi.getFilteredByGlob('./src/summaries/papers/*.md').forEach((item) => {
+      const tags = Array.isArray(item.data.tags)
+        ? item.data.tags
+        : item.data.tags ? [item.data.tags] : [];
+      tags.forEach((tag) => {
+        const t = String(tag);
+        if (['all', 'posts', 'docs'].includes(t)) return;
+        const k = t.toLowerCase();
+        if (!byLower.has(k)) byLower.set(k, t);
+      });
+    });
+    return [...byLower.values()].sort((a, b) => a.localeCompare(b));
+  });
 
-  // ---------------------  Plugins
+  // --------------------- Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.cssConfig);
   eleventyConfig.addPlugin(plugins.jsConfig);
@@ -74,12 +92,12 @@ eleventyConfig.addCollection("summaries", (collectionApi) => {
     }
   });
 
-  // ---------------------  bundle
-  eleventyConfig.addBundle('css', {hoist: true});
+  // --------------------- bundle
+  eleventyConfig.addBundle('css', { hoist: true });
 
-  // 	--------------------- Library and Data
+  // --------------------- Library and Data
   eleventyConfig.setLibrary('md', plugins.markdownLib);
-  eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
+  eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
 
   // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
@@ -91,49 +109,23 @@ eleventyConfig.addCollection("summaries", (collectionApi) => {
   eleventyConfig.addFilter('alphabetic', filters.sortAlphabetically);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
 
-
-
-  // ---- Custom filter and collections for summaries
-  eleventyConfig.addFilter("slug", (input) =>
+  // Slug helper used in summary templates
+  eleventyConfig.addFilter('slug', (input) =>
     slugify(input, { lower: true, strict: true })
   );
-
-  // Collection: summaries from subfolder
-  eleventyConfig.addCollection("summaries", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/summaries/papers/*.md").sort((a, b) => {
-      return b.date - a.date;
-    });
-  });
-
-  // Collection: tag list for summary tag page generation
-  eleventyConfig.addCollection("summaryTagList", function (collectionApi) {
-  const byLower = new Map();
-  collectionApi.getFilteredByGlob("./src/summaries/papers/*.md").forEach(item => {
-    const tags = item.data.tags || [];
-    tags.forEach(tag => {
-      const key = String(tag).toLowerCase();
-      if (!['posts','docs','all'].includes(tag) && !byLower.has(key)) {
-        byLower.set(key, tag);
-      }
-    });
-  });
-  return [...byLower.values()].sort((a, b) => a.localeCompare(b));
-});
-
-
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
   eleventyConfig.addShortcode('image', shortcodes.imageShortcode);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
-  // --------------------- Events ---------------------
+  // --------------------- Events
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {
     eleventyConfig.on('eleventy.after', events.svgToJpeg);
   }
 
   // --------------------- Passthrough File Copy
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
+  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach((path) =>
     eleventyConfig.addPassthroughCopy(path)
   );
 

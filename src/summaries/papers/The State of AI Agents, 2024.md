@@ -35,6 +35,6 @@ The authors synthesise market observations, industry surveys, and Forrester’s 
 - Demand strong production observability and real-time monitoring from vendors.
 - Apply an “align by design” governance approach to manage risks and ensure compliance with organisational values.
 
-## Notable passages quoted (optional)
+## Notable passages quoted
 > "AI agents combine contextual understanding with execution." — Forrester  
 > "Silicon Valley’s fabled ‘move fast and break things’ mantra is far too risky for AI agents." — Forrester

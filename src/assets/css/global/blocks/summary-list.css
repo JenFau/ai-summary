@@ -1,11 +1,44 @@
+/* Minimal list for /summaries and label pages */
 .summary-list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
 }
 
 .summary-list li {
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #ddd;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: .5rem;
+  background: var(--color-surface, #fff);
+}
+
+.summary-list a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.summary-list small {
+  color: var(--color-text-muted, #6b7280);
+}
+
+.summary-list p {
+  margin: .5rem 0 0 0;
+}
+
+/* Simple inline label chips */
+.summary-list .labels {
+  margin-top: .5rem;
+  font-size: .875rem;
+}
+
+.summary-list .labels a {
+  display: inline-block;
+  padding: .125rem .5rem;
+  margin-right: .25rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border, #e5e7eb);
+  text-decoration: none;
+  font-weight: 500;
 }

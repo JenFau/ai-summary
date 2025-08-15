@@ -33,7 +33,7 @@ The report draws on survey data, interviews with industry leaders, and real-worl
 - Invest in ongoing behavioural change support, peer learning, and tailored resources to maintain adoption momentum.
 - Use storytelling and visible successes to counter scepticism and link AI use to personal and organisational wins.
 
-## Notable passages quoted (optional)
+## Notable passages quoted
 > “Any kind of AI deployment requires humans in the loop… there’s always a human being overseeing the process, ensuring quality, and providing human judgment.” — Erik Brown, West Monroe
 
 > “If they enter fight or flight mode, they can’t hear anything we want them to learn about using AI, and it’s a huge distraction.” — Financial services leader

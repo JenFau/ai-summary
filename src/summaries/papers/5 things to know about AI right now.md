@@ -34,7 +34,7 @@ The piece distils five observations from a talk at SXSW London, drawing on indus
 - Factor in operational energy demands when planning AI deployments, not just training costs.
 - Treat AGI claims with caution and demand precise definitions when used in strategic discussions.
 
-## Notable passages quoted (optional)
+## Notable passages quoted
 > "Hallucination is a feature, not a bug." — Point 2
 
 > "It’s incredible to think that never before has a mass-market technology used by billions of people been so little understood." — Point 4
