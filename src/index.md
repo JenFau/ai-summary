@@ -26,3 +26,10 @@ The following pages collect blog updates from tooling vendors
 - [AI](./summaries/labels/ai)
 - [Strategy](./summaries/labels/strategy)
 - [MCP](./summaries/labels/mcp)
+
+## Youtube videos
+
+- [Agents](./videos/labels/agents)
+- [AI](./videos/labels/ai)
+- [Strategy](./videos/labels/strategy)
+- [MCP](./videos/labels/mcp)
