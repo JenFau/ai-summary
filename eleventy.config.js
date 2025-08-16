@@ -34,64 +34,87 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'post.njk');
   eleventyConfig.addLayoutAlias('tags', 'tags.njk');
 
-  // --------------------- Collections (existing)
+  // --------------------- Collections (template’s originals)
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
 
-  // --------------------- Collections (summaries)
-  // All papers by location (newest first)
-  eleventyConfig.addCollection('summaries', (collectionApi) => {
-    return collectionApi
-      .getFilteredByGlob('./src/summaries/papers/*.md')
-      .sort((a, b) => b.date - a.date);
-  });
+  // ======================================================================
+  // Collections: unified, repeatable pattern per content type
+  // ======================================================================
 
-  // Tag list for summary label pages (case-insensitive, exclude Eleventy utility tags)
-  eleventyConfig.addCollection('summaryTagList', (collectionApi) => {
-    const byLower = new Map(); // lower-case -> canonical casing
-    collectionApi.getFilteredByGlob('./src/summaries/papers/*.md').forEach((item) => {
-      const tags = Array.isArray(item.data.tags)
-        ? item.data.tags
-        : item.data.tags ? [item.data.tags] : [];
-      tags.forEach((tag) => {
-        const t = String(tag);
-        if (['all', 'posts', 'docs'].includes(t)) return;
-        const k = t.toLowerCase();
-        if (!byLower.has(k)) byLower.set(k, t);
-      });
+  /**
+   * Register a content type with:
+   *  - {typeName}:          collection name used in templates (e.g. "papers")
+   *  - {typeName}TagList:   tag list collection for that type (e.g. "papersTagList")
+   *  - {folderPath}:        folder containing the markdown files (relative to src/)
+   *
+   * Adds:
+   *   collections[typeName]       -> all items sorted newest first
+   *   collections[`${typeName}TagList`] -> unique, case-safe tag list for that type
+   */
+  function registerContentType(typeName, folderPath) {
+    // All items for this content type (newest first)
+    eleventyConfig.addCollection(typeName, (collectionApi) => {
+      return collectionApi
+        .getFilteredByGlob(`./src/${folderPath}/*.md`)
+        .sort((a, b) => b.date - a.date);
     });
-    return [...byLower.values()].sort((a, b) => a.localeCompare(b));
-  });
 
-  // JKF 16/8/25
-  // All video summaries by location (newest first)
-eleventyConfig.addCollection('videoSummaries', (collectionApi) => {
-  return collectionApi
-    .getFilteredByGlob('./src/summaries/videos/*.md')
-    .sort((a, b) => b.date - a.date);
-});
+    // Tag list for this content type (case-insensitive, exclude utility tags)
+    eleventyConfig.addCollection(`${typeName}TagList`, (collectionApi) => {
+      const byLower = new Map();
+      collectionApi.getFilteredByGlob(`./src/${folderPath}/*.md`).forEach((item) => {
+        const tags = Array.isArray(item.data.tags)
+          ? item.data.tags
+          : item.data.tags ? [item.data.tags] : [];
+        for (const tag of tags) {
+          const t = String(tag);
+          if (['all', 'posts', 'docs'].includes(t)) continue;
+          const key = t.toLowerCase();
+          if (!byLower.has(key)) byLower.set(key, t);
+        }
+      });
+      return [...byLower.values()].sort((a, b) => a.localeCompare(b));
+    });
+  }
 
-// Tag list for video label pages (case-insensitive, exclude utility tags)
-eleventyConfig.addCollection('videoTagList', (collectionApi) => {
-  const byLower = new Map();
-  collectionApi.getFilteredByGlob('./src/summaries/videos/*.md').forEach((item) => {
-    const tags = Array.isArray(item.data.tags)
-      ? item.data.tags
-      : item.data.tags ? [item.data.tags] : [];
-    for (const tag of tags) {
-      const t = String(tag);
-      if (['all', 'posts', 'docs'].includes(t)) continue;
-      const key = t.toLowerCase();
-      if (!byLower.has(key)) byLower.set(key, t);
-    }
-  });
-  return [...byLower.values()].sort((a, b) => a.localeCompare(b));
-});
-// End JKF 16/8/25
+  // --- Register your content types here (repeatable for future types) ---
+  registerContentType('papers', 'summaries/papers');
+  registerContentType('videos', 'summaries/videos');
 
+  // ---- Temporary compatibility aliases (safe to remove once templates updated)
+  // Alias: `collections.summaries` -> papers
+  try {
+    eleventyConfig.addCollection('summaries', (api) => {
+      // mirrors `papers`
+      return api.getFilteredByGlob('./src/summaries/papers/*.md').sort((a, b) => b.date - a.date);
+    });
+  } catch (_) {
+    // ignore if already defined
+  }
+  // Alias: `collections.summaryTagList` -> papersTagList
+  try {
+    eleventyConfig.addCollection('summaryTagList', (api) => {
+      const byLower = new Map();
+      api.getFilteredByGlob('./src/summaries/papers/*.md').forEach((item) => {
+        const tags = Array.isArray(item.data.tags)
+          ? item.data.tags
+          : item.data.tags ? [item.data.tags] : [];
+        for (const tag of tags) {
+          const t = String(tag);
+          if (['all', 'posts', 'docs'].includes(t)) continue;
+          const key = t.toLowerCase();
+          if (!byLower.has(key)) byLower.set(key, t);
+        }
+      });
+      return [...byLower.values()].sort((a, b) => a.localeCompare(b));
+    });
+  } catch (_) {
+    // ignore if already defined
+  }
 
-  // --------------------- Plugins
+  // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.cssConfig);
   eleventyConfig.addPlugin(plugins.jsConfig);
@@ -119,12 +142,12 @@ eleventyConfig.addCollection('videoTagList', (collectionApi) => {
     }
   });
 
-  // --------------------- bundle
+  // ---------------------  bundle
   eleventyConfig.addBundle('css', { hoist: true });
 
-  // --------------------- Library and Data
+  // 	--------------------- Library and Data
   eleventyConfig.setLibrary('md', plugins.markdownLib);
-  eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
+  eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
 
   // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
@@ -146,24 +169,30 @@ eleventyConfig.addCollection('videoTagList', (collectionApi) => {
   eleventyConfig.addShortcode('image', shortcodes.imageShortcode);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
-  // --------------------- Events
+  // --------------------- Events ---------------------
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {
     eleventyConfig.on('eleventy.after', events.svgToJpeg);
   }
 
   // --------------------- Passthrough File Copy
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach((path) =>
+
+  // -- same path
+  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 
   eleventyConfig.addPassthroughCopy({
+    // -- to root
     'src/assets/images/favicon/*': '/',
+
+    // -- node_modules
     'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
   });
 
   // --------------------- general config
   return {
     markdownTemplateEngine: 'njk',
+
     dir: {
       output: 'dist',
       input: 'src',
