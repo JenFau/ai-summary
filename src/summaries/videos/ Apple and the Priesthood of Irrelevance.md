@@ -6,6 +6,7 @@ published_at: "2025-08-15T13:00:06.000Z"
 tags: [ai, strategy]
 last_updated: "2025-08-15T20:47:55.334Z"
 layout: summary.njk
+slug: apple-priesthood-irrelevance
 ---
 
 # Apple and the Priesthood of Irrelevance

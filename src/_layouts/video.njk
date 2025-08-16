@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<article class="flow">
+  <h1>{{ title }}</h1>
+  {% if date %}<p class="text-sm text-grey">{{ date | formatDate("DD MMM YYYY") }}</p>{% endif %}
+
+  {% if summary %}
+    <p class="lead">{{ summary }}</p>
+  {% endif %}
+
+  {{ content | safe }}
+
+  {% if tags and tags.length %}
+    <p class="mt-4"><strong>Labels:</strong>
+      {% for tag in tags %}
+        <a href="/videos/labels/{{ tag | slug }}/" class="tag">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+      {% endfor %}
+    </p>
+  {% endif %}
+</article>

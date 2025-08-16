@@ -64,6 +64,33 @@ export default async function (eleventyConfig) {
     return [...byLower.values()].sort((a, b) => a.localeCompare(b));
   });
 
+  // JKF 16/8/25
+  // All video summaries by location (newest first)
+eleventyConfig.addCollection('videoSummaries', (collectionApi) => {
+  return collectionApi
+    .getFilteredByGlob('./src/summaries/videos/*.md')
+    .sort((a, b) => b.date - a.date);
+});
+
+// Tag list for video label pages (case-insensitive, exclude utility tags)
+eleventyConfig.addCollection('videoTagList', (collectionApi) => {
+  const byLower = new Map();
+  collectionApi.getFilteredByGlob('./src/summaries/videos/*.md').forEach((item) => {
+    const tags = Array.isArray(item.data.tags)
+      ? item.data.tags
+      : item.data.tags ? [item.data.tags] : [];
+    for (const tag of tags) {
+      const t = String(tag);
+      if (['all', 'posts', 'docs'].includes(t)) continue;
+      const key = t.toLowerCase();
+      if (!byLower.has(key)) byLower.set(key, t);
+    }
+  });
+  return [...byLower.values()].sort((a, b) => a.localeCompare(b));
+});
+// End JKF 16/8/25
+
+
   // --------------------- Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.cssConfig);
